@@ -1,0 +1,17 @@
+/* Basic look for all pages */
+body { font-family: Arial, sans-serif; margin: 0; background: #f2f5fa; }
+/* Top bar */
+.navbar { background: #1e3a8a; color: white; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; }
+.navbar button { background: white; color: #1e3a8a; }
+/* Main content box */
+.container { max-width: 900px; margin: 20px auto; padding: 0 15px; }
+/* White boxes for jobs and forms */
+.card { background: white; padding: 15px; margin: 12px 0; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.15); }
+input, select { width: 100%; padding: 9px; margin: 6px 0; box-sizing: border-box; }
+button { background: #2563eb; color: white; border: none; padding: 8px 14px; border-radius: 5px; cursor: pointer; margin: 3px 0; }
+button:disabled { background: gray; }
+/* Tables scroll sideways on small phone screens */
+.tablebox { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: white; }
+th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+th { background: #dbeafe; }

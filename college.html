@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>College - Campus Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar"><span id="welcome"></span><button onclick="logout()">Logout</button></div>
+  <div class="container">
+    <div class="card"><h3 id="placedCount"></h3></div>
+    <h3>All Students</h3><div id="allStudents" class="tablebox"></div>
+    <h3>All Companies</h3><div id="allCompanies" class="tablebox"></div>
+    <h3>All Jobs</h3><div id="allJobs" class="tablebox"></div>
+    <h3>All Applications</h3><div id="allApps" class="tablebox"></div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    checkAccess("college");
+    showCollege();
+  </script>
+</body>
+</html>

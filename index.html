@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- makes it mobile friendly -->
+  <title>Campus Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar"><h2>Campus Connect</h2></div>
+  <div class="container">
+    <!-- LOGIN FORM -->
+    <div class="card">
+      <h3>Login</h3>
+      <input id="loginEmail" placeholder="Email">
+      <input id="loginPassword" type="password" placeholder="Password">
+      <button onclick="login()">Login</button> <!-- runs login() from script.js -->
+    </div>
+    <!-- REGISTER FORM -->
+    <div class="card">
+      <h3>New user? Register</h3>
+      <input id="regName" placeholder="Name (or company / college name)">
+      <input id="regEmail" placeholder="Email">
+      <input id="regPassword" type="password" placeholder="Password">
+      <select id="regRole"> <!-- user chooses the role here -->
+        <option value="student">Student</option>
+        <option value="company">Company</option>
+        <option value="college">College</option>
+      </select>
+      <button onclick="register()">Register</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

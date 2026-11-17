@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student - Campus Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar"><span id="welcome"></span><button onclick="logout()">Logout</button></div>
+  <div class="container">
+    <h3>Available Placements</h3>
+    <div id="jobList"></div> <!-- JavaScript fills jobs here -->
+    <h3>My Applications</h3>
+    <div id="myApps" class="tablebox"></div> <!-- JavaScript fills table here -->
+  </div>
+  <script src="script.js"></script>
+  <script>
+    checkAccess("student");   // only students may open this page
+    showJobs();               // show all jobs
+    showMyApplications();     // show this student's applications
+  </script>
+</body>
+</html>

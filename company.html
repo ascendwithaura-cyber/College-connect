@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Company - Campus Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar"><span id="welcome"></span><button onclick="logout()">Logout</button></div>
+  <div class="container">
+    <!-- FORM TO POST A JOB -->
+    <div class="card">
+      <h3>Post a Placement</h3>
+      <input id="jobTitle" placeholder="Job title (e.g. Software Trainee)">
+      <input id="jobSalary" placeholder="Salary / package (e.g. 4 LPA)">
+      <input id="jobEligibility" placeholder="Eligibility (e.g. 60% and above)">
+      <input id="jobDate" type="date">
+      <button onclick="postJob()">Post Job</button>
+    </div>
+    <h3>My Posted Jobs</h3>
+    <div id="myJobs" class="tablebox"></div>
+    <h3>Applicants</h3>
+    <div id="applicants" class="tablebox"></div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    checkAccess("company");
+    showMyJobs();
+    showApplicants();
+  </script>
+</body>
+</html>
